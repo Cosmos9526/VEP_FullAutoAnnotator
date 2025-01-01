@@ -31,7 +31,7 @@ docker_command = [
     "sudo", "docker", "run", "-it", "--rm", "--user", "root",
     "-v", volume_mapping,
     "cosmos9526/vepensemble_with_refgen:latest",
-    "bash", "-c", (
+     "-c", (
         "vep --fork 12 --offline --host ensembldb.ensembl.org "
         "--buffer_size 100000 --check_existing --everything --allele_number "
         "--total_length --humdiv --no_progress --cache --dir_cache /root/.vep "
